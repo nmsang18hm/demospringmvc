@@ -1,7 +1,9 @@
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\entity\Slide.java
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\config\WebMvcConfig.java
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\controller\user\HomeController.java
-C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\dao\HomeDao.java
+C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\dao\SlideDao.java
+C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\service\user\HomeServiceImpl.java
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\config\SpringWebAppInitializer.java
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\entity\MapperSlide.java
 C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\config\ApplicationContextConfig.java
+C:\Users\vinhh\eclipse-workspace\demospringmvc\src\main\java\com\sang\demospringmvc\service\user\IHomeService.java

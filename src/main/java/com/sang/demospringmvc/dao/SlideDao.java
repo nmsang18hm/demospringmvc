@@ -11,14 +11,14 @@ import com.sang.demospringmvc.entity.MapperSlide;
 import com.sang.demospringmvc.entity.Slide;
 
 @Repository
-public class HomeDao {
+public class SlideDao {
 	@Autowired
-	public JdbcTemplate jdbcTemplate;
+	public JdbcTemplate _jdbcTemplate;
 	
 	public List<Slide> getDataSlide() {
 		List<Slide> list = new ArrayList<Slide>();
 		String sql = "SELECT * FROM slides";
-		list = jdbcTemplate.query(sql, new MapperSlide());
+		list = _jdbcTemplate.query(sql, new MapperSlide());
 		return list;
 	}
 }
