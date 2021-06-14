@@ -1,25 +1,19 @@
 package com.sang.demospringmvc.controller.user;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sang.demospringmvc.dao.SlideDao;
-import com.sang.demospringmvc.service.user.HomeServiceImpl;
  
 @Controller
-public class HomeController {
-	@Autowired
-	HomeServiceImpl HomeService;
+public class HomeController extends BaseController{
 	
     @RequestMapping(value = {"/", "/trang-chu"})
     public ModelAndView Index() {
-    	ModelAndView modelAndView = new ModelAndView("user/index");
-    	modelAndView.addObject("slides", HomeService.getDataSlide());
-    	return modelAndView;
+    	_mvShare.setViewName("user/index");
+    	_mvShare.addObject("slides", _homeService.getDataSlides());
+    	_mvShare.addObject("categories", _homeService.getDataCategories());
+    	return _mvShare;
     }
     
     @RequestMapping(value = {"/product"})
