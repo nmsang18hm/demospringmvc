@@ -7,7 +7,9 @@ import org.springframework.stereotype.Service;
 
 import com.sang.demospringmvc.dao.CategoryDao;
 import com.sang.demospringmvc.dao.MenuDao;
+import com.sang.demospringmvc.dao.ProductDao;
 import com.sang.demospringmvc.dao.SlideDao;
+import com.sang.demospringmvc.dto.ProductsDto;
 import com.sang.demospringmvc.entity.Category;
 import com.sang.demospringmvc.entity.Menu;
 import com.sang.demospringmvc.entity.Slide;
@@ -20,6 +22,8 @@ public class HomeServiceImpl implements IHomeService {
 	private CategoryDao categoryDao;
 	@Autowired
 	private MenuDao menuDao;
+	@Autowired
+	private ProductDao productDao;
 
 	@Override
 	public List<Slide> getDataSlides() {
@@ -32,4 +36,10 @@ public class HomeServiceImpl implements IHomeService {
 	public List<Menu> getDataMenus() {
 		return menuDao.getDataMenus();
 	}
+
+	@Override
+	public List<ProductsDto> getDataProducts() {
+		return productDao.getDataProducts();
+	}
+	
 }
